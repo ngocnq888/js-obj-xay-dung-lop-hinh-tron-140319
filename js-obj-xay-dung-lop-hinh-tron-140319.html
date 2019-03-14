@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Xay dung lop hinh tron</title>
+</head>
+<body>
+<h4>Xay dung lop hinh tron</h4>
+<script>
+    let Circle = function (radius){
+        let Cradius = radius;
+        this.getRadius = function () {
+            return Cradius;
+        };
+        this.getArea = function (radius) {
+             return Math.PI * radius * radius;
+        }
+    };
+    let a = new Circle(5);
+    alert(a.getRadius());
+    alert('Area of Circle is: '+a.getArea(5));
+    document.write(' Area of Circle is: '+ a.getArea(5));
+</script>
+
+</body>
+</html>
